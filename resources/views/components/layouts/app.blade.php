@@ -11,7 +11,7 @@
     <title>{{ config('app.name') }}</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <style>
         [x-cloak] {
             display: none !important;
@@ -27,43 +27,7 @@
         }
     </style>
     <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
-    <script type="module">
-        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
-
-        createChat({
-                    
-                webhookUrl: 'https://n8n-pzlt3bedl8ou.axwy.sumopod.my.id/webhook/9c8f756c-0527-4cda-91be-83baf8f38f3b/chat',
-                webhookConfig: {
-                    method: 'POST',
-                    headers: {}
-                },
-                target: '#n8n-chat',
-                mode: 'window',
-                chatInputKey: 'chatInput',
-                chatSessionKey: 'sessionId',
-                loadPreviousSession: true,
-                metadata: {},
-                showWelcomeScreen: false,
-                allowFileUploads: true,
-                theme: 'light',
-                defaultLanguage: 'en',
-                // initialMessages: [
-                //     'Hi there! 👋',
-                //     'My name is Nathan. How can I assist you today?'
-                // ],
-                // i18n: {
-                //     en: {
-                //         title: 'Hi there! 👋',
-                //         subtitle: "Start a chat. We're here to help you 24/7.",
-                //         footer: '',
-                //         getStarted: 'New Conversation',
-                //         inputPlaceholder: 'Type your question..',
-                //     },
-                // },
-                enableStreaming: true,
-            
-        });
-    </script>
+    
 
 
     @filamentStyles
